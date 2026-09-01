@@ -1,0 +1,41 @@
+text,label,source
+"The product quality is excellent and delivery was fast",1,product
+"Amazing service and a very friendly support team",1,service
+"This is the best purchase I have made all year",1,product
+"The movie was wonderful with brilliant acting",1,movie
+"I love how easy this application is to use",1,app
+"Fast shipping and the item works perfectly",1,product
+"The food was fresh tasty and beautifully presented",1,restaurant
+"Customer support solved my issue immediately",1,service
+"Great value for money and reliable performance",1,product
+"The interface is clean intuitive and responsive",1,app
+"I would happily recommend this to my friends",1,product
+"The package arrived early and exactly as described",1,product
+"Fantastic experience from start to finish",1,service
+"The battery lasts much longer than expected",1,product
+"This update fixed every problem I had",1,app
+"The staff were professional helpful and kind",1,service
+"The story was engaging and the ending was satisfying",1,movie
+"It exceeded my expectations in every way",1,product
+"Simple setup and excellent instructions",1,product
+"I am very pleased with the overall quality",1,product
+"The product was damaged and the service was very poor",0,product
+"I regret buying this because it stopped working",0,product
+"Terrible experience and no one answered my emails",0,service
+"The movie was boring confusing and far too long",0,movie
+"The app crashes every time I try to open it",0,app
+"Delivery was late and the box was broken",0,product
+"The food was cold bland and disappointing",0,restaurant
+"Customer support ignored my request for help",0,service
+"This is overpriced and performs very badly",0,product
+"The interface is confusing slow and frustrating",0,app
+"I would not recommend this product to anyone",0,product
+"The package never arrived and tracking was useless",0,product
+"Awful service from start to finish",0,service
+"The battery dies after only a few minutes",0,product
+"The latest update made the application worse",0,app
+"The staff were rude and completely unhelpful",0,service
+"The story was predictable and the acting was weak",0,movie
+"It failed to meet even basic expectations",0,product
+"Setup was difficult and the instructions were unclear",0,product
+"I am very disappointed with the poor quality",0,product
