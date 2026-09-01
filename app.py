@@ -30,8 +30,12 @@ def top_terms_by_sentiment(data: pd.DataFrame, limit: int = 10) -> tuple[pd.Seri
     vectorizer = TfidfVectorizer(stop_words="english", ngram_range=(1, 2))
     matrix = vectorizer.fit_transform(data.text)
     terms = pd.Index(vectorizer.get_feature_names_out())
-    positive = pd.Series(matrix[data.label.eq(1)].mean(axis=0).A1, index=terms).nlargest(limit).sort_values()
-    negative = pd.Series(matrix[data.label.eq(0)].mean(axis=0).A1, index=terms).nlargest(limit).sort_values()
+    # SciPy sparse matrices require a NumPy boolean array here; a pandas
+    # Series works in some versions but fails in newer SciPy releases.
+    positive_mask = data.label.eq(1).to_numpy()
+    negative_mask = data.label.eq(0).to_numpy()
+    positive = pd.Series(matrix[positive_mask].mean(axis=0).A1, index=terms).nlargest(limit).sort_values()
+    negative = pd.Series(matrix[negative_mask].mean(axis=0).A1, index=terms).nlargest(limit).sort_values()
     return positive, negative
 
 
